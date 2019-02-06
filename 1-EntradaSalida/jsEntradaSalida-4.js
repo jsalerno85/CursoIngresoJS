@@ -5,8 +5,11 @@
 function mostrar()
 {
 	
-	nombre=prompt();
-	ingresar=document.getElementById("Su nombre");
+	nombre=prompt ("Ingrese nombre");
+
+	//elNombre.value=nombre;
+	
+	document.getElementById("elNombre").value=nombre
 	
 }
 
