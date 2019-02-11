@@ -8,6 +8,9 @@ function SacarResto()
 	var segundonumero;
 	var resto;
 
+	//primernumero=numeroDividendo.value
+	//segundonumero=numeroDivisor.value
+
 	primernumero=document.getElementById("numeroDividendo").value;
 	segundonumero=document.getElementById("numeroDivisor").value;
 
