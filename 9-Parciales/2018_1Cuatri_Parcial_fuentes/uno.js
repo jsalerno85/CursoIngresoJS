@@ -2,7 +2,7 @@
 function mostrar()
 {
 
-	//1-Alert ("ustedes son xxxx y xxxx, sus edades son xx y xx, y la suma de sus edades es xx")
+	//1-alert ("ustedes son xxxx y xxxx, sus edades son xx y xx, y la suma de sus edades es xx")
 
 	var nombreuno
 	var nombredos
