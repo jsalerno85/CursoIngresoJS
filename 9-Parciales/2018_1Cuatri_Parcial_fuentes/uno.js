@@ -10,11 +10,11 @@ function mostrar()
 	var segundaedad
 	var sumaedades
 
-	nombreuno=prompt("Ingrese el primer nombre")
-	nombredos=prompt("Ingrese el segundo nombre")
+	nombreuno=prompt("Ingrese el primer nombre:")
+	nombredos=prompt("Ingrese el segundo nombre:")
 
-	primeraedad=prompt("Ingrese la primera edad")
-	segundaedad=prompt("Ingrese la segunda edad")
+	primeraedad=prompt("Ingrese la primera edad:")
+	segundaedad=prompt("Ingrese la segunda edad:")
 
 	primeraedad=parseInt(primeraedad)
 	segundaedad=parseInt(segundaedad)
