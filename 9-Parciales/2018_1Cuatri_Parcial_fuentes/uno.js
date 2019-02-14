@@ -21,6 +21,6 @@ function mostrar()
 
 	sumaedades=primeraedad+segundaedad;
 
-	alert=("Ustedes son "+nombreuno+ " y "+nombredos+", sus edades son "+primeraedad+" y "+segundaedad+", y la suma de sus edades es "+sumaedades);
+	alert("Ustedes son "+nombreuno+ " y "+nombredos+", sus edades son "+primeraedad+" y "+segundaedad+", y la suma de sus edades es "+sumaedades);
 
 }
