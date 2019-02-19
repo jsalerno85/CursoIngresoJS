@@ -8,7 +8,7 @@ function mostrar()
 		{
 			contador++;
 			console.log(contador)
-			alert(contador);
+			//alert(contador);
 		}
 	
 
