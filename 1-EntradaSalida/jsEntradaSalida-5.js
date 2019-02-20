@@ -3,9 +3,9 @@ ej.: "Usted se llama José y tiene 66 años" 	*/
 function mostrar()
 {	
 	
-	var nombre
+	var nombre;
 
-	var edad
+	var edad;
 	
 	//nombre=elNombre.value;
 

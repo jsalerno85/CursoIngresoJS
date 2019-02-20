@@ -2,8 +2,8 @@
 y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
 function mostrar()
 {
-	nombre=prompt("hola");
-	alert (nombre);
+	mensaje=prompt();
+	alert (mensaje);
 
 }
 

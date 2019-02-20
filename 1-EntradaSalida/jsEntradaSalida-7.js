@@ -6,7 +6,7 @@ function sumar()
 {	
 	var primernumero;
 	var segundonumero;
-	var suma
+	var suma;
 
 	primernumero=numeroUno.value;
 	segundonumero=numeroDos.value;
@@ -23,7 +23,7 @@ function restar()
 {
 	var primernumero;
 	var segundonumero;
-	var resta
+	var resta;
 
 	primernumero=numeroUno.value;
 	segundonumero=numeroDos.value;
@@ -37,7 +37,7 @@ function multiplicar()
 { 
 	var primernumero;
 	var segundonumero;
-	var multiplicar
+	var multiplicar;
 
 	primernumero=numeroUno.value;
 	segundonumero=numeroDos.value;
@@ -51,7 +51,7 @@ function dividir()
 {
 	var primernumero;
 	var segundonumero;
-	var division
+	var division;
 
 	primernumero=numeroUno.value;
 	segundonumero=numeroDos.value;
