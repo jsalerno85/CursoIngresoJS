@@ -2,14 +2,14 @@ function mostrar()
 {
 //tomo la edad  
 
-var edad;
-var estado;
+var laedad;
+var estadocivil;
 
 laedad=edad.value;
 laedad=parseInt(laedad)
-estado=estadoCivil.value;
+estadocivil=estadoCivil.value;
 
-if(laedad>=18 && estado=="Soltero")
+if(laedad>=18 && estadocivil=="Soltero")
 	{
 		alert("Es soltero y no es menor");
 	}

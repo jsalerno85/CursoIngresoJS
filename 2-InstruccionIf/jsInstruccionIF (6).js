@@ -7,22 +7,22 @@ function mostrar()
 	laedad=edad.value;
 	laedad=parseInt(laedad);
 
-	if(laedad>=13 && laedad<18)
+	if(laedad>=18)
 		{
-	
-			alert("Es adolescente")
-		}
-
-	if
-
-	if(laedad<13)
-		{
-			alert("Es niño")
+			alert("Es mayor de edad");
 		}
 
 	else
 		{
-			alert("Es mayor de edad")
+		if(laedad<13)
+			{
+				alert("Es niño");
+			}
+			else
+			{
+				alert("Es adolescente");
+			}
 		}
+			
 
 }//FIN DE LA FUNCIÓN

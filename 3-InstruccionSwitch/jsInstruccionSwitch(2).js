@@ -2,6 +2,7 @@ function mostrar()
 {
 //tomo la edad  
 var mesDelAño = document.getElementById('mes').value;
+var mensaje
 
 switch(mesDelAño)
 {
@@ -22,10 +23,6 @@ switch(mesDelAño)
 	break;
 }
 
-
-alert (mensaje);
-
-
-
+alert(mensaje)
 
 }//FIN DE LA FUNCIÓN

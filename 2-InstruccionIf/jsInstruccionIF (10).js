@@ -6,21 +6,25 @@ var numero;
 
 numero=Math.floor((Math.random() * 10) + 1);
 
+console.log(numero);
+
 alert(numero);
 
-if (numero>=9)
+if (numero>=4)
 {
-	alert("EXCELENTE");
-}
-	if (numero<4)
+	if(numero<9)
 	{
-		alert("Vamos, la proxima se puede");
-
+		alert("APROBÓ");
 	}
-
+	else
+	{
+		alert("EXCELENTE");
+	}
+}
+	
 else
 {
-	alert("APROBÓ");		
+	alert("Vamos, la proxima se puede");		
 }
 
 }//FIN DE LA FUNCIÓN

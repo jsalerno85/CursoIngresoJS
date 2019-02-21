@@ -1,10 +1,8 @@
 function mostrar()
 {
 //tomo la edad  
-var laHora = document.getElementById('hora').value;
+var laHora = document.getElementById("hora").value;
 var mensaje = ""
-
-//alert (laHora);
 
 switch(laHora)
 {
@@ -18,10 +16,6 @@ switch(laHora)
 
 }
 
-
 alert (mensaje);
 	
-
-
-
 }//FIN DE LA FUNCIÓN
