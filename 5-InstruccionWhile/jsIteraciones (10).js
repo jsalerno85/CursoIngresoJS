@@ -8,7 +8,7 @@ function mostrar()
 
 	while(respuesta!="no")
 	{
-		//lo tengo que hacer
+		//lo tengo que hacer ahoraaaaaaaaa
 	
 	}
 
