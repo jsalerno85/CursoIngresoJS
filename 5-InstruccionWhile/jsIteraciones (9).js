@@ -22,13 +22,18 @@ function mostrar()
 		numero=prompt("Ingrese otro número:");
 		numero=parseInt(numero);
 
-		if(numero>numeromayor)
+		if(numero>=numeromayor)
 		{
 			numeromayor=numero;
 		}
-		if(numero<numeromenor)
+
+		else
 		{
-			numeromayormenor=numero;
+			if(numero<numeromenor)
+			{
+				numeromenor=numero;
+			}
+
 		}
 
 		console.log("Mayor "+numeromayor);
