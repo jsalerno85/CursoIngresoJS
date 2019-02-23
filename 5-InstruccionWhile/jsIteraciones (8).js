@@ -1,7 +1,6 @@
 function mostrar()
 {
 
-var contador=0;
 var positivo=0;
 var negativo=1;
 
@@ -19,14 +18,13 @@ while(ingresar=="s")
 	{
 		positivo=positivo+numero
 	}
-	contador++;
 	ingresar=prompt("Desea ingresar otro número?");
-	if(ingresar=="n")
+	if(ingresar!="s")
 	{
 		document.getElementById("suma").value=positivo;
 		document.getElementById("producto").value=negativo;
 	}
 }
-	
+
 
 }//FIN DE LA FUNCIÓN
