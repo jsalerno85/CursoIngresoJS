@@ -6,7 +6,7 @@ function mostrar()
 	var contadornotas=0;
 	var contadorfemenino=0;
 	var contadormasculino=0;
-	var notamasbaja=10;
+	var notamasbaja;
 	var sexonotamasbaja="";
 	var mayoraseis=0;
 
@@ -18,18 +18,17 @@ function mostrar()
 	while(contador<5)
 	{
 		nota=prompt("Ingrese nota del alumno:");
+		nota=parseInt(nota);
 		
-		while(nota<0 || nota>10)
+		while(isNaN(nota) || nota<0 || nota>10)
 		{
 			nota=prompt("Ingrese nuevamente la nota del alumno:");
 			nota=parseInt(nota);
 		}
 
-		nota=parseInt(nota);
-
 		sexo=prompt("Ingrese sexo del alumno:");
 
-		while(sexo!="m" && sexo!="f")
+		while(isNaN(sexo)==false || sexo!="m" && sexo!="f")
 		{
 			sexo=prompt("Ingrese nuevamente el sexo del alumno:");
 		}
@@ -44,21 +43,28 @@ function mostrar()
 			case "m":
 			sexo="masculino";
 			contadormasculino++;
+			if(nota>=6 )
+			{
+				mayoraseis++;
+			}
 			break; 
 		}	
 		
-		if(nota>=6 && sexo=="masculino")
-		{
-			mayoraseis++;
-		}
-
 		contador++;
 		contadornotas=contadornotas+nota;
 
-		if(nota<notamasbaja)
+		if(contador==1)
 		{
 			notamasbaja=nota;
 			sexonotamasbaja=sexo;
+		}
+		else
+		{
+			if(nota<notamasbaja)
+			{
+				notamasbaja=nota;
+				sexonotamasbaja=sexo;
+			}
 		}
 	}
 	
