@@ -23,10 +23,10 @@ function mostrar()
 		validador=prompt("Desea ingresar valores?");
 	}
 
-	ingresarletra=prompt("Desea ingresar una letra?");
+	ingresarletra=prompt("Ingrese una letra:");
 
 
-	ingresarnumero=prompt("Desea ingresar un numero?");
+	ingresarnumero=prompt("Ingrese un numero:");
 
 
 
