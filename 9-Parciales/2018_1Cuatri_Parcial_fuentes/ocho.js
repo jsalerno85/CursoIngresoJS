@@ -94,7 +94,7 @@ function mostrar()
 			}
 		}
 
-		if(numero%2==0)
+		if(numero%2==0 && numero!=0)
 		{
 			cantidadpares++;
 		}
