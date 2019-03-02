@@ -1,32 +1,55 @@
 function mostrar()
 {
+	var numerouno;
+	var numerodos;
+	var soniguales;
+	var resultado;
 
-	//3-Al realizar una compra, si compra de mas de dos productos se realiza un descuento del 10% y si supera los $2000 se agrega un descuento adicional de 15%, si el pago es con tarjeta y no efectivo al precio final se le agrega un 10% de recargo.
+	numerouno=prompt("Ingrese el primer número:");
 
-	var cantidad;
-	var monto;
-	var cantidadProductos;
-	var sumaProductos;
-	var descuentoProductos;
-	var descuentoMonto;
-
-
-	cantidad=prompt("Ingrese cantidad de productos:");
-	monto=prompt("Ingrese monto de la compra:");
-	productoDos=prompt("Ingrese precio del segundo producto:");
-	cantidad=parseInt(cantidadProductos);
-	productoUno=parseInt(productoUno);
-	productoDos=parseInt(productoDos);
-	sumaProductos=productoUno+productoDos;
-
-	if(cantidad>=2)
+	while(isNaN(numerouno)==true)
 	{
-		descuentoProductos=sumaProductos*0.9
+		numerouno=prompt("Ingrese el primer número:");
+	}
 
-		if(sumaProductos>2000)
+	numerodos=prompt("Ingrese el segundo número:");
+
+	while(isNaN(numerodos)==true)
+	{
+		numerodos=prompt("Ingrese el segundo número:");
+	}
+
+	if(numerouno==numerodos)
+	{
+		soniguales=numerouno+numerodos;
+		alert(soniguales);
+	}
+
+	numerouno=parseInt(numerouno);
+	numerodos=parseInt(numerodos);
+
+	if(numerouno>numerodos)
+	{
+		resultado=numerouno-numerodos;
+		resultado=parseInt(resultado);
+		alert(resultado);
+
+	}
+
+	else
+	{
+		if(numerouno<numerodos)
 		{
-			descuentoProductos=descuentoProductos*1.15
+			resultado=numerouno+numerodos;
+			resultado=parseInt(resultado);
+			alert(resultado);
 		}
+		
+	}
+	
+	if(resultado>10)
+	{
+		alert("La suma es "+resultado+" y supero el 10");
 	}
 
 	

@@ -1,26 +1,31 @@
 
 function mostrar()
 {
+	var ancho;
+	var largo;
+	var perimetro;
 
-	//1-alert ("ustedes son xxxx y xxxx, sus edades son xx y xx, y la suma de sus edades es xx")
+	ancho=prompt("Ingrese el ancho del rectángulo:");
+	ancho=parseInt(ancho);
 
-	var nombreuno;
-	var nombredos;
-	var primeraedad;
-	var segundaedad;
-	var sumaedades;
+	while(isNaN(ancho)==true)
+	{
+		ancho=prompt("Ingrese el ancho del rectángulo:");
+		ancho=parseInt(ancho);
+	}
 
-	nombreuno=prompt("Ingrese el primer nombre:");
-	nombredos=prompt("Ingrese el segundo nombre:");
+	largo=prompt("Ingrese el largo del rectángulo:");
+	largo=parseInt(largo);
 
-	primeraedad=prompt("Ingrese la primera edad:");
-	segundaedad=prompt("Ingrese la segunda edad:");
+	while(isNaN(largo)==true)
+	{
+		largo=prompt("Ingrese el largo del rectángulo:");
+		largo=parseInt(largo);
+	}
 
-	primeraedad=parseInt(primeraedad);
-	segundaedad=parseInt(segundaedad);
+	perimetro=(largo+ancho)*2;
+	perimetro=parseInt(perimetro);
 
-	sumaedades=primeraedad+segundaedad;
-
-	alert("Ustedes son "+nombreuno+ " y "+nombredos+", sus edades son "+primeraedad+" y "+segundaedad+", y la suma de sus edades es "+sumaedades);
+	alert("El perimetro del rectángulo es "+perimetro);	
 
 }

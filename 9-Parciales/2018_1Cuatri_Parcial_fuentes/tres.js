@@ -5,19 +5,26 @@ function mostrar()
 	var descuento;
 	var preciofinal;
 
-	precio=prompt("Ingrese precio: ");
-	descuento=prompt("Ingrese porcentaje de descuento: ");
-	
-	while(descuento>100 || descuento<1)
+	precio=prompt("Ingrese el precio:");
+	precio=parseInt(precio)
+
+	while(isNaN(precio)==true)
 	{
-		descuento=prompt("Vuelva a ingresar porcentaje de descuento: ");
+		precio=prompt("Ingrese el precio:");
+		precio=parseInt(precio);
 	}
 
-	precio=parseInt(precio);
+	descuento=prompt("Ingrese el descuento:");
 	descuento=parseInt(descuento);
 
-	preciofinal=(precio*descuento)/100;
+	while(isNaN(descuento)==true)
+	{
+		descuento=prompt("Ingrese el descuento:");
+		descuento=parseInt(descuento);
+	}
 
-	elPrecioFinal.value=preciofinal;
+	preciofinal=(precio*descuento)/100;
+	document.getElementById("elPrecioFinal").value=preciofinal;
+	//elPrecioFinal.value=preciofinal;
 
 }
