@@ -1,10 +1,8 @@
 function mostrar()
 {
 	var letra;
-	var numero;
-	var ingresarletra="";
-	var ingresarnumero;
-	var validador;
+	var numero=0;
+	var validador="";
 	var ceros;
 	var cantidadpares;
 	var cantidadimpares;
@@ -22,17 +20,26 @@ function mostrar()
 	{
 		validador=prompt("Desea ingresar valores?");
 	}
+	
+	while(validador=="s")
+	{
+		letra=prompt("Ingrese una letra:");
 
-	ingresarletra=prompt("Ingrese una letra:");
+		while(isNaN(letra)==false || letra>-101 && letra<101)
+		{
+			letra=prompt("Ingrese una letra válida:");
+		}	
+
+		numero=promp("Ingrese un número:");
+
+		while(isNaN(numero)=true)
+		{
+			numero=prompt("Ingrese un valor numérico válido:");
+		}
 
 
-	ingresarnumero=prompt("Ingrese un numero:");
 
-
-
-
-
-
-
-
+		validador=prompt("Desea seguir ingresando valores?");
+		
+	}
 }

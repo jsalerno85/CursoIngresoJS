@@ -6,13 +6,15 @@ function mostrar()
 	var cantidadceros;
 	var numerospositivos;
 	var numerosnegativos;
+	var mensaje;
 
-	mensaje=alert("Desea ingresar un numero?");
+	mensaje=alert("Desea comenzar a ingresar datos?");
 
 	while(mensaje!="s")
 	{
 		mensaje=alert("Desea ingresar un numero?");
 	}
+		
 		letraynumero=prompt("Ingrese una letra y un numero:");
 	
 		while(isNaN(nota) || nota<0 || nota>10)
@@ -61,7 +63,7 @@ function mostrar()
 				sexonotamasbaja=sexo;
 			}
 		}
-	}
+	
 	
 
 	alert("El promedio total de las notas es de "+(contadornotas/contador));
