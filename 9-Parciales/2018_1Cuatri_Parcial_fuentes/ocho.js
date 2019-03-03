@@ -26,10 +26,10 @@ function mostrar()
 	numerominimo=parseInt(numerominimo);
 
 
-	ingresar=prompt("Desea comenzar a ingresar datos?");
+	ingresar=prompt("Desea comenzar a ingresar datos?(s/n)");
 	while(isNaN(ingresar)==false || ingresar!="s")
 	{
-		ingresar=prompt("Desea comenzar a ingresar datos?");
+		ingresar=prompt("Desea comenzar a ingresar datos?(s/n)");
 	}
 
 	while(ingresar=="s")
@@ -58,21 +58,23 @@ function mostrar()
 			numerominimo=parseInt(numerominimo);
 		}
 
+		if(numero>numeromaximo)
+		{
+			numeromaximo=numero;
+			numeromaximo=parseInt(numeromaximo);
+			letranumeromaximo=letra;
+		}
 		else
 		{
-			if(numero>numeromaximo)
-			{
-				numeromaximo=numero;
-				numeromaximo=parseInt(numeromaximo);
-				letranumeromaximo=letra;
-			}
-			else
+			if(numero<numerominimo)
 			{
 				numerominimo=numero;
 				numerominimo=parseInt(numerominimo);
 				letranumerominimo=letra;
 			}
+			
 		}
+		
 
 		if(numero>0)
 		{
@@ -106,10 +108,12 @@ function mostrar()
 			}
 		}
 
-		ingresar=prompt("Desea seguir ingresando datos?");
+		contador++;
+
+		ingresar=prompt("Desea seguir ingresando datos?(s/n)");
 		while(isNaN(ingresar)==false || ingresar!="s" && ingresar!="n")
 		{
-			ingresar=prompt("Desea seguir ingresando datos?");
+			ingresar=prompt("Desea seguir ingresando datos?(s/n)");
 		}
 
 		if(ingresar=="n")
@@ -119,6 +123,8 @@ function mostrar()
 				document.write("La cantidad de ceros es de "+cantidadceros+"<br>");
 				document.write("El promedio de todos los números positivos ingresados es "+valorpositivos/cantidadpositivos+"<br>");
 				document.write("La suma de todos los números negativos ingresados es "+sumanegativos+"<br>");
+				document.write("El número máximo y su letra es "+numeromaximo+letranumeromaximo+"<br>");
+				document.write("El número mínimo y su letra es "+numerominimo+letranumerominimo+"<br>");
 			}
 	}
 
