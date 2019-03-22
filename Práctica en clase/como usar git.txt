@@ -1,0 +1,8 @@
+
+ 1 - git clone repo
+
+ 2 - git add .
+
+ 3 - git commit -m "comentario del commit"
+
+ 4 - git push
